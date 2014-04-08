@@ -1,0 +1,1 @@
+{"Defense": "5", "Strength": "8", "Health": "20", "Resistance": "5", "Gold": 500, "Luck": "5", "Gender": "Male", "Magic": "5", "Skill": "Swordplay", "Name": "Example Character"}
