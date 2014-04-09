@@ -42,9 +42,6 @@ info = json.load(open(character_file_name))
 health = int(info['Health'])
 strength = int(info['Strength'])
 
-#Increase health
-info['Health'] = str(health + 1)
-
 #Generate random number between 1 and 100
 seed = randint(1,100)
 print(str(seed))
@@ -54,7 +51,7 @@ if seed <= 33:
     info['Health'] = str(health + 2)
     print("Health goes up two points!")
 
-#Possibility 2 ~ 34-65  ~ Increase Health 1 and Strength 1
+#Possibility 2 ~ 34-65 ~ Increase Health 1 and Strength 1
 if seed > 33 and seed < 66:
     info['Health'] = str(health + 1)
     info['Strength'] = str(strength + 1)

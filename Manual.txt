@@ -18,8 +18,20 @@ For the skill field you must choose from one of five different activities that y
 
 Swordplay increases Strength, Blacksmithing increases Defense, Magic increases Magic, Alchemy increases Resistance, and Gambling increases Luck.
 
-The newly created character's save file will be name like "CHARACTERNAME.txt" and will be stored in the characters folder.
+The newly created character's save file will be name like "CHARACTERNAME.txt" and will be stored in the Characters folder.
 
 If you everwish to overwrite a character or remove a character you can simply delete the save file of the character or create a new character with the same name as the original character and it will be overwritten by a new character.
 ======================
 002 - FORTRAN - Forest Training
+
+Forest Training is method of training you characters. You can use Forest Training once every five minutes, with being able to use one character every five minutes. You can do Forest Training by running the program "Forest Training.py".
+
+Note that because of how the program is coded it only takes minutes into account so for example if you use the program at 6:03 and try to use it at 7:04 you won't be able to use it as it doesn;t matter the hour you use it in it just checks if it is five minutes after the last "*:Minute" you did Forest Training.
+
+Currently Forest Training uses a 1-100 RNG to determine the outcome of the training. With the results being:
+
+*0-33 ~ Increase Health by 2
+*34-65 ~ Increase Health by 1 and Strength by 1
+*66-100 ~ Increase Strength by 2
+
+The time you last used Forest Training (in minutes from the hour) will be showed to you when you use the program. The file that stores that time is located in the Times folder under "Forest Training.txt".
