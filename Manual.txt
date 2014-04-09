@@ -1,0 +1,25 @@
+This is a manual on how to use this python based rpg.
+
+======================
+Table of Contents
+======================
+001 - CHARCRT - Creating a Character
+002 - FORTRAN - Forest Training
+======================
+001 - CHARCRT - Creating a Character
+
+To create a character you must use the program titled "Character Creation.py". When you run the program it will ask you to input the character's name, gender, and skill.
+
+You can use any name for your character, however if you create a new character with the same name as a previously created character it will overwrite the save file of the pre-existing character. Note that character names are case specific, and you will have to type in the name of your character when ever you use them, so it's best not to give them a very long name.
+
+For the gender field you must input either "Male", "Female", or "Ungendered". WIth the first letter being capitalized and the rest of the letters being lower case.
+
+For the skill field you must choose from one of five different activities that your character is skilled at. Either "Swordplay", "Blacksmithing", "Magic", "Alchemy", or "Gambling". Note that you must input your choice with the first letter capitalized and the rest of the letters lower case. Depending on the skill that you choose your character will have slightly different starting stats, and their skill will (eventually) effect how they perform.
+
+Swordplay increases Strength, Blacksmithing increases Defense, Magic increases Magic, Alchemy increases Resistance, and Gambling increases Luck.
+
+The newly created character's save file will be name like "CHARACTERNAME.txt" and will be stored in the characters folder.
+
+If you everwish to overwrite a character or remove a character you can simply delete the save file of the character or create a new character with the same name as the original character and it will be overwritten by a new character.
+======================
+002 - FORTRAN - Forest Training
