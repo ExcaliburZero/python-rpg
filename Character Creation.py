@@ -75,6 +75,3 @@ character_file_name = "Characters/" + name + ".txt"
 #Open and Write to character file
 info = {"Name": name, "Gender": gender, "Skill": skill, "Gold": 500, "Health": health, "Strength": strength, "Defense": defense, "Magic": magic, "Resistance": resistance, "Luck": luck}
 json.dump(info, open(character_file_name,'w'))
-
-#Close character file
-#character_file.close()
