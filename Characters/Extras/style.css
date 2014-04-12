@@ -1,0 +1,30 @@
+body{
+	background: #FFFFFF;
+}
+
+#holder{
+	border: 1px solid #001752;
+	margin: auto;
+	width: 200px;
+	background: #8999c7;
+	margin-top: 20px;
+	padding: 5px;
+	padding-top: 0px;
+	border-radius: 20px;
+}
+
+.data{
+	width: 190px;
+}
+
+.tdone{
+	width: 60%;
+}
+
+.tdtwo{
+	width: 40%;
+}
+
+h2{
+	border-bottom: 1px solid black;
+}
