@@ -83,25 +83,40 @@ print(str(seed))
 if seed <= 11:
     stat_change("Health", 1)
     
-#Possibility 1 ~ 12-22 ~ Increase Strength 1
+#Possibility 1 ~ 12-22 ~ Increase Strength 1 (or 2)
 if seed <= 22 and seed > 11:
-    stat_change("Strength", 1)
+    if skill == "Swordplay":
+        stat_change("Strength", 2)
+    else:
+        stat_change("Strength", 1)
     
-#Possibility 1 ~ 23-33 ~ Increase Defense 1
+#Possibility 1 ~ 23-33 ~ Increase Defense 1 (or 2)
 if seed <= 33 and seed > 22:
-    stat_change("Defense", 1)
+    if skill == "Blacksmithing":
+        stat_change("Defense", 2)
+    else:
+        stat_change("Defense", 1)
     
-#Possibility 1 ~ 34-44 ~ Increase Magic 1
+#Possibility 1 ~ 34-44 ~ Increase Magic 1 (or 2)
 if seed <= 44 and seed > 33:
-    stat_change("Magic", 1)
+    if skill == "Magic":
+        stat_change("Magic", 2)
+    else:
+        stat_change("Magic", 1)
     
-#Possibility 1 ~ 45-55 ~ Increase Resistance 1
+#Possibility 1 ~ 45-55 ~ Increase Resistance 1 (or 2)
 if seed <= 55 and seed > 44:
-    stat_change("Resistance", 1)
+    if skill == "Alchemy":
+        stat_change("Resistance", 2)
+    else:
+        stat_change("Resistance", 1)
     
-#Possibility 1 ~ 56-66 ~ Increase Luck 1
+#Possibility 1 ~ 56-66 ~ Increase Luck 1 (or 2)
 if seed <= 66 and seed > 55:
-    stat_change("Luck", 1)
+    if skill == "Gambling":
+        stat_change("Luck", 2)
+    else:
+        stat_change("Luck", 1)
     
 #Possibility 1 ~ 67-77 ~ Increase Gold 50
 if seed <= 77 and seed > 66:
