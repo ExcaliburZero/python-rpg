@@ -4,7 +4,9 @@ This is a manual on how to use this python based rpg.
 Table of Contents
 ======================
 001 - CHARCRT - Creating a Character
-002 - FORTRAN - Forest Training
+002 - CHARSET - Generating a Character Sheet
+003 - TRANGRD - Training Grounds
+004 - FORTRAN - Forest Training
 ======================
 001 - CHARCRT - Creating a Character
 
@@ -22,11 +24,40 @@ The newly created character's save file will be name like "CHARACTERNAME.txt" an
 
 If you everwish to overwrite a character or remove a character you can simply delete the save file of the character or create a new character with the same name as the original character and it will be overwritten by a new character.
 ======================
-002 - FORTRAN - Forest Training
+002 - CHARSET - Generating a Character Sheet
+
+When a character file is saved it is saved as a python dictionary, which can make reading your character's info a bit difficult. So, in order to make your character's info easier to read you can make a character sheet for your character using "Character Sheet.py".
+
+When you run the program your character's info will be outputted in the console.
+
+You also are given the option to output the character's info to an HTML file. The HTML file is stored in the Characters folder alongside the character save files. An example of the name of an HTML character sheet file would be "Bob(Character Sheet).html". You can view the HTML file with an internet browser.
+======================
+003 - TRANGRD - Training Grounds
+
+Training Grounds is method of training you characters. You can use Forest Training once every three minutes, with being able to use one character every three minutes. You can use the Training Grounds by running the program "Training Grounds.py".
+
+Note that because of how the program is coded it only takes minutes into account so for example if you use the program at 6:03 and try to use it at 7:04 you won't be able to use it as it doesn't matter the hour you use it in it just checks if it is five minutes after the last "*:Minute" you did Training Grounds.
+
+Currently Training Grounds uses a 1-100 RNG to determine the outcome of the training. With the results being:
+
+*0-11 ~ Increase Health by 1 (or 2)
+*12-22 ~ Increase Strength by 1 (or 2)
+*23-33 ~ Increase Defense by 1 (or 2)
+*34-44 ~ Increase Magic by 1 (or 2)
+*45-55 ~ Increase Resistance by 1 (or 2)
+*56-66 ~ Increase Luck by 1 (or 2)
+*67-77 ~ Obtain 50 Gold
+*78-100 ~ Obtain 20 Gold
+
+Parenthesies indicate high stat increases that occur if your character has a skill that specializes in that specific stat. For example a character with the skill Magic will gain 2 Magic instead of 1.
+
+The time you last used Training Grounds (in minutes from the hour) will be showed to you when you use the program. The file that stores that time is located in the Times folder under "Training Grounds.txt".
+======================
+004 - FORTRAN - Forest Training
 
 Forest Training is method of training you characters. You can use Forest Training once every five minutes, with being able to use one character every five minutes. You can do Forest Training by running the program "Forest Training.py".
 
-Note that because of how the program is coded it only takes minutes into account so for example if you use the program at 6:03 and try to use it at 7:04 you won't be able to use it as it doesn;t matter the hour you use it in it just checks if it is five minutes after the last "*:Minute" you did Forest Training.
+Note that because of how the program is coded it only takes minutes into account so for example if you use the program at 6:03 and try to use it at 7:04 you won't be able to use it as it doesn't matter the hour you use it in it just checks if it is five minutes after the last "*:Minute" you did Forest Training.
 
 Currently Forest Training uses a 1-100 RNG to determine the outcome of the training. With the results being:
 
